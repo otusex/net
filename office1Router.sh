@@ -5,6 +5,5 @@ sudo bash -c 'echo "net.ipv4.conf.all.forwarding=1" >> /etc/sysctl.conf'; sudo s
 echo "DEFROUTE=no" >> /etc/sysconfig/network-scripts/ifcfg-eth0
 echo "GATEWAY=192.168.254.1" >> /etc/sysconfig/network-scripts/ifcfg-eth1
 sudo systemctl restart network
-sudo reboot
 
 

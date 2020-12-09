@@ -77,19 +77,19 @@ Vagrant.configure("2") do |config|
 
 case boxname.to_s
         when "inetRouter"
-           config.vm.provision "shell", path: "inetRouter.sh"
+           config.vm.provision "shell", run: "always", path: "inetRouter.sh"
         when "centralRouter"
-           config.vm.provision "shell", path: "centralRouter.sh"
+           config.vm.provision "shell", run: "always", path: "centralRouter.sh"
         when "centralServer"
-           config.vm.provision "shell", path: "centralServer.sh"
+           config.vm.provision "shell", run: "always", path: "centralServer.sh"
         when "office1Router"
-           config.vm.provision "shell", path: "office1Router.sh"
+           config.vm.provision "shell", run: "always", path: "office1Router.sh"
         when "office1Server"
-           config.vm.provision "shell", path: "office1Server.sh"
+           config.vm.provision "shell", run: "always", path: "office1Server.sh"
         when "office2Router"
-           config.vm.provision "shell", path: "office2Router.sh"
+           config.vm.provision "shell", run: "always", path: "office2Router.sh"
          when "office2Server"
-           config.vm.provision "shell", path: "office2Server.sh"
+           config.vm.provision "shell", run: "always", path: "office2Server.sh"
         end
 
       end
